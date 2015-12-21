@@ -1,0 +1,13 @@
+import Argo
+import Curry
+
+struct # {
+    ~
+}
+
+extension #: Decodable {
+    static func decode(j: JSON) -> Decoded<#> {
+        return curry(#.init)
+            $
+    }
+}
